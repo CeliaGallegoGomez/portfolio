@@ -1,1 +1,10 @@
-
+.title {
+  font-family: "Josefin Sans" sans-serif;
+  &__header {
+    color: #c1fbb2;
+    font-size: 67px;
+    letter-spacing: 7px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}

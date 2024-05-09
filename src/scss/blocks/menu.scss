@@ -1,0 +1,22 @@
+.menu {
+  width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 24px;
+  margin-bottom: 119px;
+
+  &__item {
+    display: none;
+  }
+
+  &__cross {
+    display: none;
+  }
+  &__logo {
+    width: 135px;
+    height: 32px;
+  }
+}
