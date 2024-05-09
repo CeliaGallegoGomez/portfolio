@@ -1,3 +1,9 @@
 .header {
-    padding-left:27px ;
+  padding-left: 27px;
+  height: 638px;
+  position: relative;
+  &__image {
+    position: absolute;
+    top: 0;
+  }
 }
