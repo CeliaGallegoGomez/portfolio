@@ -7,4 +7,25 @@
     font-weight: 500;
     margin-bottom: 0;
   }
+
+  &__card {
+    text-align: center;
+    color: #8C68EF;
+    font-size: 32px;
+    line-height: 51px;
+    letter-spacing: 3%;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 27px;
+  }
+
+  &__galery {
+    text-align: center;
+    color: #C1FBB2;
+    font-size: 32px;
+    letter-spacing: 3%;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 27px;
+  }
 }

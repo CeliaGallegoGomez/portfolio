@@ -5,4 +5,16 @@
     color: #ecffe7;
     padding-left: 45px;
   }
+
+  &__card {
+    margin-top: 0;
+    text-align: center;
+    color: #8C68EF;
+    font-weight: 16px;
+    margin-bottom: 40px;
+
+    &__span {
+      font-weight: 700;
+    }
+  }
 }

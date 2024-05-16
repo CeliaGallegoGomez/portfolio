@@ -1,0 +1,46 @@
+.galery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__container {
+        position: relative;
+     width: 343px;
+     height: 1384px;
+     border: 3px dashed #c1fbb2;
+     border-radius: 63px;
+    }
+
+    &__caperu {
+     position: absolute;
+     width: 152px;
+     height: 210px;
+     left: 10px;
+     top: 40px;
+    }
+
+    &__cartel {
+        position: absolute;
+        width: 151px;
+        height: 226px;
+        left: 175px;
+        top: 30px;
+    }
+
+    &__pablo {
+        position: absolute;
+        top: 270px;
+        left: 30px;
+        width: 283px;
+        height: 198px;
+    }
+
+    &__pescado {
+        position: absolute;
+        left: 10px;
+        top: 490px;
+        width: 159px;
+        height: 226px;
+
+    }
+}
