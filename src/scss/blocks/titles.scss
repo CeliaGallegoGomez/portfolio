@@ -28,4 +28,24 @@
     margin-bottom: 8px;
     margin-top: 27px;
   }
+
+  &__cards {
+    text-align: center;
+    color: #8C68EF;
+    font-size: 32px;
+    letter-spacing: 3%;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 27px;
+  }
+
+  &__card {
+    text-align: center;
+    color: #C1FBB2;
+    font-size: 32px;
+    letter-spacing: 3%;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 27px;
+  }
 }

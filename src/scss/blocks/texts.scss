@@ -6,7 +6,7 @@
     padding-left: 45px;
   }
 
-  &__card {
+  &__cardz {
     margin-top: 0;
     text-align: center;
     color: #8C68EF;
@@ -16,5 +16,14 @@
     &__span {
       font-weight: 700;
     }
+  }
+
+  &__card {
+    font-size: 16px;
+    color: #ECFFE7;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 13px;
   }
 }
