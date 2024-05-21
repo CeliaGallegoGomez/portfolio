@@ -1,12 +1,20 @@
-
+@use "../mixins/responsive.scss" as *;
+@use '../mixins/hover.scss' as *;
 
 .button {
     &__footer {
         font-size: 16px;
         color: white;
+        @include responsive (desktop){
+            font-size: 32px;
+            @include hover {
+                color: #c1fbb2;
+            }
+        }
     }
 
     &__social {
         filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(3499%) hue-rotate(142deg) brightness(119%) contrast(100%);;
+
     }
 }

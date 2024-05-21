@@ -1,3 +1,6 @@
+@use "../mixins/responsive.scss" as *;
+@use '../mixins/hover.scss' as *;
+
 .footer {
     margin-top: 50px;
     width: 375px;
@@ -7,6 +10,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 72px;
+
+    @include responsive (desktop) {
+        width: 1440px;
+        margin-bottom: 150px;
+        margin-top: 100px;
+    }
 
     &__contacto {
         height: 150px;
