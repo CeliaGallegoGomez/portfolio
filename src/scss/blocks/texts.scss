@@ -38,5 +38,9 @@
     margin-top: 0;
     padding-left: 10px;
     padding-right: 13px;
+
+    @include responsive (desktop){
+      text-align: left;
+    }
   }
 }

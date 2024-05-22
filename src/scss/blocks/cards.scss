@@ -35,11 +35,23 @@
     margin-bottom: 16px;
     padding-bottom: 8px;
 
+    @include responsive(desktop){
+        width: 514px;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+
+        @include responsive (desktop) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            height: 118px;
+            width: 374px;
+        }
     }
 
     &__title {
