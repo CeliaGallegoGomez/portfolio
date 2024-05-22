@@ -42,6 +42,23 @@
      }
     }
 
+    &__lumm {
+        display: none;
+        @include responsive (desktop) {
+            display: initial;
+            position: absolute;
+            width: 712px;
+            height: 516px;
+            top: 1439px;
+            left:600px ;
+
+            @include hover {
+                border: 3px solid #c1fbb2;
+                border-radius: 50px;
+            }
+        }
+    }
+
     &__cartel {
         position: absolute;
         width: 151px;
@@ -50,7 +67,16 @@
         top: 30px;
 
         @include responsive (desktop){
+            position: absolute;
+            width: 470PX;
+            height: 706px;
+            top: 678px;
+            left:842px ;
 
+            @include hover {
+                border: 3px solid #c1fbb2;
+                border-radius: 50px;
+            }
         }
     }
 
@@ -81,6 +107,19 @@
         top: 490px;
         width: 159px;
         height: 226px;
+
+        @include responsive (desktop) {
+            position: absolute;
+            left: 63px ;
+            top: 1248px;
+            width: 477px;
+            height: 676px;
+
+            @include hover {
+                border: 3px solid #c1fbb2;
+                border-radius: 50px;
+            }
+        }
 
     }
 
