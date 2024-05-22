@@ -1,3 +1,5 @@
+@use "../mixins/responsive.scss" as *;
+
 .presentacion {
   padding-top: 50px;
   background-color: #c1fbb2;
@@ -5,19 +7,43 @@
   padding-left: 16px;
   padding-bottom: 1px;
 
+  @include responsive (desktop){
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__container {
     border: 3px dashed #8C68EF;
     border-radius: 100px;
     width: 343px;
     padding-left: 16px;
     padding-right: 16px;
+
+    @include responsive (desktop){
+      width: 949px;
+      height: 392px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
   }
-  &__card {
+  &__cardz {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     justify-content: center;
     height: 493px;
+
+    &__container {
+      @include responsive (desktop) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
   &__image {
@@ -25,5 +51,11 @@
     width: 236px;
     height: 239px;
     margin-left: 40px;
+
+    @include responsive (desktop) {
+      width: 353px;
+      height: 353px;
+      margin-left: 0;
+    }
   }
 }

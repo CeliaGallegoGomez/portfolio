@@ -6,7 +6,10 @@
   position: relative;
   &__image {
     position: absolute;
-    top: 0;
+    top: 0px;
+    left: -10px;
+    width: 607px;
+    height: 638px;
     @include responsive (desktop) {
       position:absolute;
       top: -150px;
@@ -16,7 +19,8 @@
   }
 
   @include responsive (desktop){
+    margin-top: 100px;
     padding-left: 76px;
-    height: 795px;
+    height: 400px;
   }
 }

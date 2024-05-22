@@ -21,6 +21,11 @@
     font-weight: 16px;
     margin-bottom: 40px;
 
+    @include responsive (desktop){
+      text-align: left;
+      width: 443px;
+    }
+
     &__span {
       font-weight: 700;
     }

@@ -1,3 +1,6 @@
+@use "../mixins/responsive.scss" as *;
+@use '../mixins/hover.scss' as *;
+
 .galery {
     display: flex;
     flex-direction: column;
@@ -10,6 +13,12 @@
      height: 1350px;
      border: 3px dashed #c1fbb2;
      border-radius: 63px;
+
+     @include responsive (desktop){
+        width: 1376px;
+        height: 3204px;
+        border-radius: 137px;
+     }
     }
 
     &__caperu {
@@ -18,6 +27,19 @@
      height: 210px;
      left: 10px;
      top: 40px;
+
+     @include responsive (desktop) {
+        position: absolute;
+        top: 89px;
+        left: 63px;
+        width: 476px;
+        height: 658px;
+
+        @include hover {
+            border: 3px solid #c1fbb2;
+            border-radius: 50px;
+        }
+     }
     }
 
     &__cartel {
@@ -26,6 +48,10 @@
         height: 226px;
         left: 175px;
         top: 30px;
+
+        @include responsive (desktop){
+
+        }
     }
 
     &__pablo {
@@ -34,6 +60,19 @@
         left: 30px;
         width: 283px;
         height: 198px;
+
+        @include responsive (desktop) {
+            position: absolute;
+            width: 716px;
+            height: 402px;
+            top: 799px;
+            left: 63px;
+
+            @include hover {
+                border: 3px solid #c1fbb2;
+                border-radius: 50px;
+            }
+        }
     }
 
     &__pescado {
@@ -59,6 +98,19 @@
         position: absolute;
         top: 735px;
         left: 30px;
+
+        @include responsive (desktop){
+            position: absolute;
+            width: 706px;
+            height: 512px;
+            top: 120px;
+            left: 600px;
+
+            @include hover {
+                border: 3px solid #c1fbb2;
+                border-radius: 50px;
+            }
+        }
     }
 
     &__mockup {
