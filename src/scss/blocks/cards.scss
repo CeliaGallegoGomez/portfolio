@@ -1,7 +1,14 @@
+@use "../mixins/responsive.scss" as *;
+@use '../mixins/hover.scss' as *;
+
 .cards {
     background-color: #C1FBB2;
     height: 1237px;
     padding-top: 1px;
+
+    @include responsive (desktop) {
+        height: 900px;
+    }
 
     &__container {
         display: flex;
@@ -9,6 +16,10 @@
     align-items: center;
     justify-content: space-between;
     height: 953px;
+
+    @include responsive (desktop) {
+        height: 685px;
+    }
     }
 }
 
