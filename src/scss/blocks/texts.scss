@@ -1,9 +1,17 @@
+@use "../mixins/responsive.scss" as *;
+
 .text {
   &__header {
     margin-top: 0;
     font-size: 16px;
     color: #ecffe7;
     padding-left: 45px;
+
+    @include responsive (desktop) {
+      margin-top: 0;
+      font-size: 40px;
+      padding-left: 130px;
+    }
   }
 
   &__cardz {

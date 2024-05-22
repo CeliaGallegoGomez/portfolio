@@ -1,3 +1,6 @@
+@use "../mixins/responsive.scss" as *;
+@use '../mixins/hover.scss' as *;
+
 .menu {
   width: 375px;
   display: flex;
@@ -8,15 +11,46 @@
   margin-top: 24px;
   margin-bottom: 119px;
 
+  @include responsive (desktop) {
+    margin-top: 48px;
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__list {
+    width: 935px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   &__item {
     display: none;
+
+    @include responsive (desktop){
+      display: initial;
+    }
+  }
+
+  &__hamburguer {
+    @include responsive (desktop) {
+      display: none;
+    }
   }
 
   &__cross {
     display: none;
+
   }
   &__logo {
     width: 135px;
     height: 32px;
+
+    @include responsive (desktop) {
+      width: 236px;
+      height: 56px;
+    }
   }
 }
