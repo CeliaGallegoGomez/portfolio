@@ -41,6 +41,8 @@
 
     @include responsive (desktop){
       text-align: left;
+      margin-top: -10px;
+      margin-left: -10px;
     }
   }
 }
