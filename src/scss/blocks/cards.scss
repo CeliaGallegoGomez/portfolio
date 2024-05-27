@@ -5,6 +5,7 @@
     background-color: #C1FBB2;
     height: 1237px;
     padding-top: 1px;
+    position: relative;
 
     @include responsive (desktop) {
         height: 900px;
@@ -34,6 +35,38 @@
     border-radius: 20px;
     margin-bottom: 16px;
     padding-bottom: 8px;
+
+    &__eri {
+        @include responsive (desktop){
+            position: absolute;
+            top: 100px;
+            left: 32px;
+        }
+    }
+
+    &__mer {
+        @include responsive (desktop) {
+            position: absolute;
+            top:310px;
+            left: 322px;        
+        }
+    }
+
+    &__luz {
+        @include responsive (desktop) {
+            position: absolute;
+            top: 500px;
+            left: 655px;
+        }
+    }
+
+    &__yo {
+        @include responsive (desktop){
+            position: absolute;
+            left: 970px;
+            top: 690px;
+        }
+    }
 
     @include responsive(desktop){
         width: 514px;
