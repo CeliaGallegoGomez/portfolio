@@ -43,5 +43,10 @@
 
     &__social {
         filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(3499%) hue-rotate(142deg) brightness(119%) contrast(100%);
+        @include responsive (desktop){
+            @include hover {
+                filter: brightness(0) saturate(100%) invert(88%) sepia(19%) saturate(619%) hue-rotate(56deg) brightness(104%) contrast(97%);
+            }
+        }
     }
 }
